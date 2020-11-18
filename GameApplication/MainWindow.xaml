@@ -1,0 +1,21 @@
+﻿<Window x:Class="GameApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GameApplication"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"  ResizeMode="NoResize">
+    <Grid Loaded="Grid_Loaded">
+        <Grid.Background>
+            <ImageBrush ImageSource="Resourses\backgr.jpg"/>
+        </Grid.Background>
+
+        <Button x:Name="ButtonStart" Content="Start" HorizontalAlignment="Left" Margin="279,59,0,0" VerticalAlignment="Top" Width="244" Height="46" Click="ButtonStart_Click"/>
+        <Button x:Name="ButtonSet" Content="Results table" HorizontalAlignment="Left" Margin="279,144,0,0" VerticalAlignment="Top" Width="244" Height="46" Click="ButtonSet_Click"/>
+        <Button x:Name="ButtonExit" Content="Exit" HorizontalAlignment="Left" Margin="280,226,0,0" VerticalAlignment="Top" Width="244" Height="46" Click="ButtonExit_Click"/>
+        <TextBox x:Name="tbName" HorizontalAlignment="Left" Height="23" Margin="283,312,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="239" Background="#FF19618C" Foreground="#FFEDE3E3" BorderBrush="#FF333743"/>
+
+
+    </Grid>
+</Window>

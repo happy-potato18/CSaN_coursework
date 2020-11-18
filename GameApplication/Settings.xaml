@@ -1,0 +1,22 @@
+﻿<Window x:Class="GameApplication.Settings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GameApplication"
+        mc:Ignorable="d"
+        Title="Settings" Height="450" Width="800" ResizeMode="NoResize">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Resourses\backgr.jpg"/>
+        </Grid.Background>
+        <DataGrid Name ="gridResults" LoadingRow="DataGrid_LoadingRow" HorizontalAlignment="Left" Height="402" Margin="76,8,0,0" VerticalAlignment="Top" Width="700" IsReadOnly="True" AutoGenerateColumns="False" Loaded="GridResults_Loaded">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Name"  Binding="{Binding name}"  Width="500" />
+                <DataGridTextColumn Header="Score"  Binding="{Binding score}"  Width="200" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <ProgressBar x:Name="progressBar" HorizontalAlignment="Left" Height="10" Margin="83,9,0,0" VerticalAlignment="Top" Width="100" Visibility="Hidden"/>
+
+    </Grid>
+</Window>
